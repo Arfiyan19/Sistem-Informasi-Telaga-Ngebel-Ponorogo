@@ -43,48 +43,20 @@ http://www.templatemo.com/tm-466-cafe-house
             </div>
             <nav class="tm-nav" style="    padding-right: 50px;">
               <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="menu.html">About</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="{{ url('/') }}" class="active">Home</a></li>
+                <li><a href="{{ url('/about') }}">About</a></li>
+                <li><a href="{{ url('/contact-us') }}">Contact Us</a></li>
               </ul>
             </nav>   
           </div>           
         </div>    
       </div>
     </div>
-    <div class="tm-main-section light-gray-bg">
-      <div class="container" id="main" style="    padding-top: 12px;">
-        <section class="tm-section row">
-          <div class="col-lg-9 col-md-9 col-sm-8">
-            <h2>Wisata Telaga Ngebel Ponorogo</h2>
-            
-          </div>
-          <div>
-          <iframe style="width: 950px;"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22360.69124501219!2d111.63290760512342!3d-7.8057945101141355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79a5c5dec5ee11%3A0x2f8d7bcc05a5221a!2sWisata%20Telaga%20Ngebel!5e0!3m2!1sen!2sid!4v1635217906561!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            ></iframe>
+    <div  class="tm-main-section light-gray-bg">
+    <div class="container" id="main" style="    padding-top: 12px;">
+    @yield('konten') 
 
 
-
-          </div>
-          <div class="col-lg-3 col-md-3 col-sm-4 tm-welcome-img-container">
-          </div>            
-        </section>          
-        <section class="tm-section">
-          <div class="row">
-            <div class="col-lg-12 tm-section-header-container">
-              <h2 class="tm-section-header gold-text tm-handwriting-font"> Keterangan Wisata</h2> 
-              <div class="tm-hr-container"><hr class="tm-hr"></div> 
-            </div>  
-          </div>
-          @foreach($dataWisata as $items)
- 
-		<li style="font-size: 35px; font-family: 'Times New Roman', Times, serif;">{{ $items }}</li>
- 
-		@endforeach
-<br>
-            </div>
-          </div>          
-        </section>
       </div>
     </div> 
     
@@ -95,7 +67,7 @@ http://www.templatemo.com/tm-466-cafe-house
             <nav class="col-lg-3 col-md-3 tm-footer-nav tm-footer-div">
               <h3 class="tm-footer-div-title">Main Menu</h3>
               <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="">Home</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Directory</a></li>
                 <li><a href="#">Blog</a></li>
@@ -107,8 +79,8 @@ http://www.templatemo.com/tm-466-cafe-house
               <p class="margin-top-15">Telaga Ngebel adalah sebuah danau alami yang terletak di Kecamatan Ngebel, Kabupaten Ponorogo. Kecamatan Ngebel terletak di kaki gunung Wilis. Telaga Ngebel terletak sekitar 30 kilometer dari pusat kota Ponorogo atau yang terkenal dengan nama Kota Reog. Keliling dari Telaga Ngebel sekitar 5 KM</p>
             </div>
             <div class="col-lg-4 col-md-4 tm-footer-div">
-              <h3 class="tm-footer-div-title">Get Social</h3>
-              <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante.</p>
+              <h3 class="tm-footer-div-title">Media Sosial</h3>
+              <p></p>
               <div class="tm-social-icons-container">
                 <a href="#" class="tm-social-icon"><i class="fa fa-facebook"></i></a>
                 <a href="#" class="tm-social-icon"><i class="fa fa-twitter"></i></a>
@@ -121,8 +93,7 @@ http://www.templatemo.com/tm-466-cafe-house
         </div>  
       </div>      
       <div>
-            <img src="template/img/1.jpg" alt="">
-        <div class="container" img>
+        <div class="container" >
           <div class="row tm-copyright">
            <p class="col-lg-12 small copyright-text text-center">Copyright &copy; 2084 Your Cafe House</p>
          </div>  

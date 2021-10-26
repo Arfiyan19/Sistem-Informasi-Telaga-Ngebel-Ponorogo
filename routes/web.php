@@ -12,7 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 Route::get('/', 'App\Http\Controllers\DataWisataController@dataWisata');
+Route::get('/about', 'App\Http\Controllers\DataWisataController@about');
+Route::get('/contact-us', 'App\Http\Controllers\DataWisataController@contactUs');
 
 

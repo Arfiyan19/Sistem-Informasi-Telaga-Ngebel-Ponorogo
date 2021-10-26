@@ -561,7 +561,7 @@ ol li:before {
 .tm-product {
   margin-right: 0;
   margin-left: auto;
-  max-width: 652px;
+  max-width:1000px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
